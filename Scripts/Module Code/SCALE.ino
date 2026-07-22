@@ -18,8 +18,6 @@ void setup() {
 
   scale.set_offset(OFFSET);
 
-  scale.tare();
-
   Serial.println("Load cell ready.");
 }
 

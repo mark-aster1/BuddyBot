@@ -17,76 +17,48 @@ Suport pentru camera Insta360, pentru filmare stabilizată.
 Interfață utilizator: display TFT SPI 2.8" cu meniu ierarhic (status sistem, mod urmărire, radar BLE, scanner, testare motoare), navigabil prin gamepad PS5 conectat wireless, cu stream video oglindit și accesibil pe rețea.
 Alimentare: baterie principală LiPo 3S dedicată platformei, separată de o a doua baterie pentru modulele consumatoare de energie, prevenind resetări ale sistemului central cauzate de fluctuații de tensiune.
 
-Cerinte sistem
-BuddyBot – Cerințe Sistem
+# Cerinte sistem
+# BuddyBot – Cerințe Sistem
 
-Hardware minim necesar
+#### Hardware minim necesar
+* Unitate centrală: Raspberry Pi 3B+ sau superior, procesor Cortex-A53 1.4GHz quad-core, minim 1GB RAM.
+* Stocare: card microSD, minim 16GB, clasă de viteză 10.
+* Sistem de operare: Raspberry Pi OS Lite, fără interfață grafică desktop.
+* Cameră: webcam USB compatibilă UVC, de exemplu Logitech C922, rezoluție minim 640x480.
+* Microcontrollere: 4 module ESP32-C3 Super Mini, plus un ESP32 folosit ca beacon purtat de utilizator.
+* Motoare: 4 motoare DC cu encoder, de exemplu GoBilda Yellow Jacket 312 RPM.
+* Drivere motoare: 2 module BTS7960 sau echivalent H-Bridge, minim 20A per canal.
+* Controller PWM: modul PCA9685, interfață I2C.
+* Servomotoare braț: compatibile cu protocol PWM standard sau serial, de exemplu Axon MAX, Axon MINI, Plex Torque.
+* Senzor greutate: load cell maxim 20kg, plus convertor ADC HX711.
+* LIDAR: modul LIDAR 2D rotativ, interfață serial sau USB.
+* Display: TFT SPI 5.1 inch, driver ILI9341, rezoluție 240x320px.
+* Control manual: gamepad PS5 DualSense, plus adaptor Bluetooth USB extern recomandat pentru latență redusă.
+* Alimentare: baterie LiPo 3S 11.1V minim 2200mAh pentru platformă, plus baterie secundară 12V minim 3000mAh pentru module.
+* Siguranță electrică: breaker sau siguranță 50A pe linia principală, plus siguranțe individuale pentru fiecare subsistem.
 
-Unitate centrală: Raspberry Pi 3B+ sau superior, procesor Cortex-A53 1.4GHz quad-core, minim 1GB RAM.
+#### Cerințe software
+* Raspberry Pi OS Lite, versiune Bullseye sau ulterioară.
+* Python 3.9 sau mai nou, cu bibliotecile OpenCV, NumPy, Pillow, spidev, pyzbar și evdev.
+* Model pre-antrenat MobileNet SSD, format Caffe, pentru detecția persoanei.
+* Firmware Arduino C++ pentru ESP32-C3, dezvoltat în Arduino IDE sau PlatformIO.
+* Server local, Node.js sau Flask/FastAPI, pentru interfața web și streaming video MJPEG.
+* Acces la rețea Wi-Fi locală, Raspberry Pi configurat ca punct de acces propriu.
+  
+#### Cerințe de mediu și operare
+* Spațiu suficient pentru manevrare, rotația pe loc necesitând minim aproximativ 50 pe 50 centimetri liberi.
+* Iluminare adecvată pentru detecția vizuală, performanța scăzând considerabil în condiții de lumină foarte slabă.
+* Temperatură de operare recomandată între 0 și 40 de grade Celsius, limitare impusă de componentele electronice și de bateriile LiPo.
+* Suprafață relativ plană, necesară pentru propulsia de tip tank drive.
+* Distanță utilă pentru triangularea BLE, recomandat sub 10-15 metri față de beacon, în funcție de interferențe.
 
-Stocare: card microSD, minim 16GB, clasă de viteză 10.
+#### Cerințe de utilizator
+* Un dispozitiv, telefon sau laptop, conectat la rețeaua Wi-Fi a robotului, pentru acces la interfața web, opțional întrucât display-ul TFT oferă control complet on-board.
+* Gamepad PS5 DualSense încărcat și asociat prin Bluetooth, pentru control manual.
+* Beacon ESP32 purtat de utilizator, pornit și funcțional, necesar pentru recuperarea urmăririi în cazul pierderii vizuale.
 
-Sistem de operare: Raspberry Pi OS Lite, fără interfață grafică desktop.
 
-Cameră: webcam USB compatibilă UVC, de exemplu Logitech C922, rezoluție minim 640x480.
-
-Microcontrollere: 4 module ESP32-C3 Super Mini, plus un ESP32 folosit ca beacon purtat de utilizator.
-
-Motoare: 4 motoare DC cu encoder, de exemplu GoBilda Yellow Jacket 312 RPM.
-
-Drivere motoare: 2 module BTS7960 sau echivalent H-Bridge, minim 20A per canal.
-
-Controller PWM: modul PCA9685, interfață I2C.
-
-Servomotoare braț: compatibile cu protocol PWM standard sau serial, de exemplu Axon MAX, Axon MINI, Plex Torque.
-
-Senzor greutate: load cell maxim 20kg, plus convertor ADC HX711.
-
-LIDAR: modul LIDAR 2D rotativ, interfață serial sau USB.
-
-Display: TFT SPI 2.8 inch, driver ILI9341, rezoluție 240x320px.
-
-Control manual: gamepad PS5 DualSense, plus adaptor Bluetooth USB extern recomandat pentru latență redusă.
-
-Alimentare: baterie LiPo 3S 11.1V minim 2200mAh pentru platformă, plus baterie secundară 12V minim 3000mAh pentru module.
-
-Siguranță electrică: breaker sau siguranță 50A pe linia principală, plus siguranțe individuale pentru fiecare subsistem.
-
-Cerințe software
-
-Raspberry Pi OS Lite, versiune Bullseye sau ulterioară.
-
-Python 3.9 sau mai nou, cu bibliotecile OpenCV, NumPy, Pillow, spidev, pyzbar și evdev.
-
-Model pre-antrenat MobileNet SSD, format Caffe, pentru detecția persoanei.
-
-Firmware Arduino C++ pentru ESP32-C3, dezvoltat în Arduino IDE sau PlatformIO.
-
-Server local, Node.js sau Flask/FastAPI, pentru interfața web și streaming video MJPEG.
-
-Acces la rețea Wi-Fi locală, Raspberry Pi configurat ca punct de acces propriu.
-
-Cerințe de mediu și operare
-
-Spațiu suficient pentru manevrare, rotația pe loc necesitând minim aproximativ 50 pe 50 centimetri liberi.
-
-Iluminare adecvată pentru detecția vizuală, performanța scăzând considerabil în condiții de lumină foarte slabă.
-
-Temperatură de operare recomandată între 0 și 40 de grade Celsius, limitare impusă de componentele electronice și de bateriile LiPo.
-
-Suprafață relativ plană, necesară pentru propulsia de tip tank drive.
-
-Distanță utilă pentru triangularea BLE, recomandat sub 10-15 metri față de beacon, în funcție de interferențe.
-
-Cerințe de utilizator
-
-Un dispozitiv, telefon sau laptop, conectat la rețeaua Wi-Fi a robotului, pentru acces la interfața web, opțional întrucât display-ul TFT oferă control complet on-board.
-
-Gamepad PS5 DualSense încărcat și asociat prin Bluetooth, pentru control manual.
-
-Beacon ESP32 purtat de utilizator, pornit și funcțional, necesar pentru recuperarea urmăririi în cazul pierderii vizuale.
-
-Realizatori
+## Realizatori
 Mark Aster
 Scoala: Liceul Teoretic “Nikolaus Lenau”
 Clasa: 11

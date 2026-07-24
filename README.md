@@ -59,12 +59,13 @@ Alimentare: baterie principală LiPo 3S dedicată platformei, separată de o a d
 
 
 ## Realizatori
-Mark Aster
+#### Mark Aster
 Scoala: Liceul Teoretic “Nikolaus Lenau”
 Clasa: 11
 Judet: Timiș
 Oras: Timisoara
-Jannik Welzeck
+
+#### Jannik Welzeck
 Scoala: Liceul teoretic Nikolaus Lenau
 Clasa: 11
 Judet: Timiș

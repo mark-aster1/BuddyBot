@@ -83,4 +83,3 @@ Oras: Timisoara
 
 <img width="400" height="714" alt="18544" src="https://github.com/user-attachments/assets/b9ed52c5-66dc-4580-997d-f54388d629be" />
 
-<img width="400" height="148" alt="1623" src="https://github.com/user-attachments/assets/08b968fc-92ad-49d8-93d6-50fb38c23234" />

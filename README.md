@@ -70,3 +70,17 @@ Scoala: Liceul teoretic Nikolaus Lenau
 Clasa: 11
 Judet: Timiș
 Oras: Timisoara
+
+
+# Galerie Foto
+<img width="400" height="400" alt="47398" src="https://github.com/user-attachments/assets/ad571cb4-cc54-4b6d-a9a6-6a9a0714ef21" />
+
+<img width="400" height="533" alt="41395" src="https://github.com/user-attachments/assets/ef544cf9-f853-4d3e-a0c0-ff0fa0d0b8fe" />
+
+<img width="400" height="533" alt="21233" src="https://github.com/user-attachments/assets/d3bfb94d-999f-4abf-847c-0d5d561d2bce" />
+
+<img width="400" height="867" alt="IMG_0089" src="https://github.com/user-attachments/assets/8e78b86a-32b1-4eac-984d-bbcf3e6c2a94" />
+
+<img width="400" height="714" alt="18544" src="https://github.com/user-attachments/assets/b9ed52c5-66dc-4580-997d-f54388d629be" />
+
+<img width="400" height="148" alt="1623" src="https://github.com/user-attachments/assets/08b968fc-92ad-49d8-93d6-50fb38c23234" />

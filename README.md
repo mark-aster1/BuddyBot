@@ -77,7 +77,7 @@ Oras: Timisoara
 
 <img width="400" height="533" alt="41395" src="https://github.com/user-attachments/assets/ef544cf9-f853-4d3e-a0c0-ff0fa0d0b8fe" />
 
-<img width="400" height="533" alt="21233" src="https://github.com/user-attachments/assets/d3bfb94d-999f-4abf-847c-0d5d561d2bce" />
+<img width="400" height="907" alt="40358" src="https://github.com/user-attachments/assets/8c947f5f-4dfd-40a5-b23a-cb63551b177d" />
 
 <img width="400" height="867" alt="IMG_0089" src="https://github.com/user-attachments/assets/8e78b86a-32b1-4eac-984d-bbcf3e6c2a94" />
 

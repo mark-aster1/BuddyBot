@@ -73,13 +73,14 @@ Oras: Timisoara
 
 
 # Galerie Foto
-<img width="400" height="400" alt="47398" src="https://github.com/user-attachments/assets/ad571cb4-cc54-4b6d-a9a6-6a9a0714ef21" />
+<p><img width="300" height="300" alt="47398" src="https://github.com/user-attachments/assets/ad571cb4-cc54-4b6d-a9a6-6a9a0714ef21" /></p>
 
-<img width="400" height="533" alt="41395" src="https://github.com/user-attachments/assets/ef544cf9-f853-4d3e-a0c0-ff0fa0d0b8fe" />
+<p><img width="300" height="400" alt="41395" src="https://github.com/user-attachments/assets/ef544cf9-f853-4d3e-a0c0-ff0fa0d0b8fe" /></p>
 
-<img width="400" height="907" alt="40358" src="https://github.com/user-attachments/assets/8c947f5f-4dfd-40a5-b23a-cb63551b177d" />
+<p><img width="300" height="400" alt="21233" src="https://github.com/user-attachments/assets/d3bfb94d-999f-4abf-847c-0d5d561d2bce" /></p>
 
-<img width="400" height="867" alt="IMG_0089" src="https://github.com/user-attachments/assets/8e78b86a-32b1-4eac-984d-bbcf3e6c2a94" />
+<p><img width="300" height="231" alt="79915" src="https://github.com/user-attachments/assets/e7fbcf6a-5a95-42d4-8ba7-8a363e860784" /></p>
 
-<img width="400" height="714" alt="18544" src="https://github.com/user-attachments/assets/b9ed52c5-66dc-4580-997d-f54388d629be" />
+<p><img width="300" height="536" alt="18544" src="https://github.com/user-attachments/assets/b9ed52c5-66dc-4580-997d-f54388d629be" /></p>
 
+<p><img width="300" height="111" alt="1623" src="https://github.com/user-attachments/assets/08b968fc-92ad-49d8-93d6-50fb38c23234" /></p>
